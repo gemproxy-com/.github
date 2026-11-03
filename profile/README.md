@@ -48,7 +48,7 @@
       <h3>Developer API</h3>
       <ul>
         <li>REST API, one <code>X-Api-Token</code> header</li>
-        <li>600 requests per minute</li>
+        <li>Rotate keys, buy and renew proxies from your own code</li>
         <li>Try-it console and samples in cURL, Node.js, Python, Go, PHP, Ruby, Java and C#</li>
       </ul>
       <a href="https://app.gemproxy.com/api-docs"><b>API docs →</b></a> <sub>(sign-in required)</sub>
