@@ -4,7 +4,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
     <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.png">
-    <img alt="GemProxy: rotating and static proxies with IPs in Vietnam. HTTP and SOCKS5, REST API, browser extension, desktop apps." src="assets/banner-dark.png" width="100%">
+    <img alt="GemProxy: rotating and static proxies with IPs in Vietnam. HTTP(S) and SOCKS5 (TCP and UDP), REST API, browser extension, desktop and Android apps." src="assets/banner-dark.png" width="100%">
   </picture>
 </a>
 
@@ -16,7 +16,7 @@
 
 ## About GemProxy
 
-**GemProxy** ([gemproxy.com](https://gemproxy.com?utm_source=github&utm_medium=bio&utm_campaign=github-profile)) sells proxies with IP addresses in Vietnam. Rotating proxies change IP when you call the API or press a button in the dashboard. Static proxies keep the same residential or datacenter IP for the whole rental. You buy, top up and manage everything in one dashboard, and you can check a proxy's exit IP and speed there before you put it to work.
+**GemProxy** ([gemproxy.com](https://gemproxy.com?utm_source=github&utm_medium=bio&utm_campaign=github-profile)) sells proxies with IP addresses in Vietnam. Rotating proxies support HTTP(S) and SOCKS5 (TCP &amp; UDP) and change IP when you call the API or press a button in the dashboard. Static proxies keep the same residential or datacenter IP for the whole rental. You buy, top up and manage everything in one dashboard, and you can check a proxy's exit IP and speed there before you put it to work.
 
 ## What we offer
 
@@ -27,7 +27,7 @@
       <h3>Rotating proxies</h3>
       <ul>
         <li>IPv4 addresses in Vietnam</li>
-        <li>HTTP and SOCKS5</li>
+        <li>HTTP(S) and SOCKS5 (TCP &amp; UDP)</li>
         <li>New IP on request, after a 1 to 5 minute wait depending on the plan</li>
         <li>Hourly and daily plans</li>
       </ul>
@@ -71,7 +71,7 @@ curl -X POST https://api.gemproxy.com/api/v1/rotate-proxies/rotate \
   -d '{"keyValue":"YOUR_KEY"}'
 ```
 
-The response carries the new proxy as `host:port:user:pass` for HTTP and SOCKS5, plus `ttcSeconds`, the wait before the next rotation. Calling again too early returns `PROXY_ROTATE_COOLDOWN_NOT_REACHED`. Create a token under **API Keys** in the [API docs](https://app.gemproxy.com/api-docs#keys).
+The response carries the new proxy as `host:port:user:pass` for HTTP(S) and SOCKS5 (TCP &amp; UDP), plus `ttcSeconds`, the wait before the next rotation. Calling again too early returns `PROXY_ROTATE_COOLDOWN_NOT_REACHED`. Create a token under **API Keys** in the [API docs](https://app.gemproxy.com/api-docs#keys).
 
 ## Apps
 
@@ -79,6 +79,7 @@ The response carries the new proxy as `host:port:user:pass` for HTTP and SOCKS5,
 |---|---|
 | Browser extension (Chrome, Edge, Firefox) | [Chrome Web Store](https://chromewebstore.google.com/detail/ofbgenpeacgpiinhegahahfkjlddbgli) · [Firefox Add-ons](https://addons.mozilla.org/addon/gemproxy/) |
 | Desktop app (Windows, macOS, Linux) | [gemproxy.com/download](https://gemproxy.com/download?utm_source=github&utm_medium=bio&utm_campaign=github-profile) |
+| Android app | [Download APK](https://cdn.gemproxy.com/setup-android/gemproxy-1.0.9.apk) |
 | Telegram Mini App | [@gemproxy_app_bot](https://t.me/gemproxy_app_bot) |
 
 Payments: VND wallet topped up by VietQR bank transfer, or USDT on TRC20, BEP20, Polygon and Arbitrum One.
@@ -103,9 +104,9 @@ Our blog posts and videos on how proxies work, how to check one and how to set i
 
 ### Tiếng Việt
 
-**GemProxy** bán proxy có IP tại Việt Nam: proxy xoay đổi IP qua API hoặc một nút bấm trên dashboard, và proxy tĩnh giữ nguyên một IP dân cư hoặc datacenter suốt kỳ thuê. Mua gói, nạp tiền bằng VietQR hoặc USDT, rồi tự kiểm tra IP và tốc độ ở mục Kiểm tra proxy trước khi dùng thật.
+**GemProxy** bán proxy có IP tại Việt Nam: proxy xoay hỗ trợ HTTP(S) và SOCKS5 (TCP &amp; UDP), đổi IP qua API hoặc một nút bấm trên dashboard, và proxy tĩnh giữ nguyên một IP dân cư hoặc datacenter suốt kỳ thuê. Mua gói, nạp tiền bằng VietQR hoặc USDT, rồi tự kiểm tra IP và tốc độ ở mục Kiểm tra proxy trước khi dùng thật.
 
-[Trang chủ](https://gemproxy.com?utm_source=github&utm_medium=bio&utm_campaign=github-profile) · [Bảng giá](https://gemproxy.com/pricing?utm_source=github&utm_medium=bio&utm_campaign=github-profile) · [Tải ứng dụng](https://gemproxy.com/download?utm_source=github&utm_medium=bio&utm_campaign=github-profile) · [Hỗ trợ qua Telegram](https://t.me/gemproxy_support_bot) · [Mời tụi mình ly cà phê](https://buymeacoffee.com/gemproxyofc)
+[Trang chủ](https://gemproxy.com?utm_source=github&utm_medium=bio&utm_campaign=github-profile) · [Bảng giá](https://gemproxy.com/pricing?utm_source=github&utm_medium=bio&utm_campaign=github-profile) · [Tải ứng dụng](https://gemproxy.com/download?utm_source=github&utm_medium=bio&utm_campaign=github-profile) · [Tải app Android](https://cdn.gemproxy.com/setup-android/gemproxy-1.0.9.apk) · [Hỗ trợ qua Telegram](https://t.me/gemproxy_support_bot) · [Mời tụi mình ly cà phê](https://buymeacoffee.com/gemproxyofc)
 
 <br>
 
